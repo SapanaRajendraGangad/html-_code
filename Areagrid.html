@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container
+        {
+            width: 80%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 100px 80px 200px 450px 90px;
+            grid-gap: 10px;
+        }
+        .header
+        {
+            background-color: darkslategrey;
+            grid-column: 1/-1;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows:50px 50px ;
+            grid-gap: 10px;
+            padding: 20px;
+        }
+        .logo img
+        {
+            height: 70px;
+            width: 100px;
+        }
+        .menu-bar ul{
+          text-decoration: none;
+          padding-top: 20px;
+          font-size: 25px;
+          
+        }
+        .menu-bar ul li{
+          display: inline;
+           margin: 15px;
+        }
+        .menu-bar ul li a{
+          text-decoration: none;
+          color: aliceblue;
+        }
+        .nav
+        {
+            background-color: darkmagenta;
+            grid-column: 1/-1;
+        }
+        .nav h1
+        {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 20px;
+            text-shadow: 2px red;
+        }
+        .sidebar
+        {
+            background-color: blueviolet;
+            grid-column: 1/-1;
+        }
+        .sidebar p{
+            text-align: justify;
+            padding: 20px;
+        }
+        .content
+        {
+            background-color: yellowgreen;
+            width: 800px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 200px 200px;
+            grid-gap: 10px;
+            padding: 10px;
+        }
+        .box1
+        {
+            border: 2px solid white;
+            background-image: url(cafe.jpg);
+            background-position: center;
+         background-repeat: no-repeat;
+         position: relative;
+         background-size: cover;
+        }
+        .box2
+        {
+            border: 2px solid white;
+            background-image: url(bullet.jpg);
+            background-position: center;
+         background-repeat: no-repeat;
+         position: relative;
+         background-size: cover;
+        }
+        .box3
+        {
+            border: 2px solid white;
+            background-image: url(bro-sis.jpg);
+            background-position: center;
+         background-repeat: no-repeat;
+         position: relative;
+         background-size: cover;
+        }
+        .box4
+        {
+            border: 2px solid white;
+            background-image: url(cap.jpg);
+            background-position: center;
+         background-repeat: no-repeat;
+         position: relative;
+         background-size: cover;
+        }
+        .navbar
+        {
+            background-color: aqua;
+        }
+        .navbar p
+        {
+            text-align: justify;
+            margin: 20px;
+        }
+        .navbar h1
+        {
+            font-weight: bold;
+            margin: 20px;
+            text-align: center;
+        }
+        .footer
+        {
+            background-color: blueviolet;
+            grid-column: 1/-1;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 60px;
+            padding: 20px;
+            grid-gap: 10px;
+        }
+        
+        .lo img
+        {
+            height: 65px;
+            width: 80px;
+            margin-left: 70px;
+        }
+        .link a
+        {
+           font-size: 30px; 
+           margin-bottom: 30px;
+           color: white;
+           text-decoration: dashed;
+        }
+        .add h6
+        {
+          font-weight: bold;
+          color: white;
+          font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="bullet.jpg">
+            </div>
+            <div class="menu-bar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                      <li><a href="#">Watch Now</a></li>
+                      <li><a href="#">contact</a></li>
+                      <li><a href="#">about us</a></li>
+            </div>
+        </div>
+        <div class="nav">
+            <h1># Information #</h1>
+        </div>
+        <div class="sidebar">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates 
+                inventore debitis facilis provident repellat officia rerum at nulla 
+                cum perspiciatis reiciendis, dolores dolor omnis nobis temporibus 
+                doloremque consectetur accusamus aut, vitae labore facere numquam, 
+                in vel. Quo suscipit sunt non. Repudiandae, sint tenetur praesentium
+                 corrupti autem et non laudantium fugit, labore cupiditate cum
+                  provident quod inventore voluptate! Voluptatum sint quae quisquam 
+                  aut, odit, voluptatibus illo, aspernatur facere ipsa enim fugit 
+                  incidunt. Officia fugiat iure doloremque harum velit similique, 
+                  vero porro tempore fuga odit iusto nisi, perferendis aliquam nobis 
+                  veniam quia expedita totam quidem magnam labore perspiciatis ipsum
+                   reiciendis esse. Exercitationem sed qui molestiae veritatis deleniti
+                    adipisci hic minima rerum, dolore minus nostrum commodi mollitia,
+                     magni quibusdam, recusandae eos veniam rem quasi alias optio
+                      accusantium dignissimos. Maiores hic quasi totam tenetur facilis 
+                      animi provident saepe magnam alias expedita eius, officiis 
+                      asperiores dolor voluptates harum, ipsam odit sunt. Sint minima 
+                      itaque magni. Perferendis fuga nostrum ab nam tenetur adipisci 
+                      quae, perspiciatis minus est nobis ea quidem cumque sapiente 
+                      natus expedita. Nihil harum quam adipisci. Beatae, corrupti 
+                      sapiente modi sed accusantium numquam nobis incidunt possimus .</p>
+        </div>
+        <div class="content">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+            <div class="box4"></div>
+        </div>
+        <div class="navbar">
+            <h1>lorem</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, 
+                veritatis cumque. Reiciendis porro exercitationem vero tenetur odio 
+                quis iste consequatur cumque maxime harum ducimus quos voluptatem
+                 nobis, blanditiis quae impedit magni. Id, repellendus! Perspiciatis 
+                 autem optio quae deleniti tenetur ipsam consectetur dolorem, ratione
+                  odit eligendi. Cupiditate recusandae quam, itaque corporis est
+                   quibusdam
+                 maxime exercitationem beatae tempora incidunt quas? Eius, placeat.</p>
+        </div>
+        <div class="footer">
+            <div class="lo">
+                <img src="tour.png">
+            </div>
+            <div class="link"><a href="https://www.google.com/search?q=tourist+places+near+shirdi+within+100+km&sca_esv=588279375&sxsrf=AM9HkKn4A05IOwKaRLRp4gy-l_eRl1IsAA%3A1701841559558&ei=lwpwZYbSIfuaseMPj6-OqAo&oq=information+of+shirdi+tourism+places&gs_lp=Egxnd3Mtd2l6LXNlcnAiJGluZm9ybWF0aW9uIG9mIHNoaXJkaSB0b3VyaXNtIHBsYWNlcyoCCAEyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsANI4BBQAFgAcAF4AJABAJgBrQGgAa0BqgEDMC4xuAEByAE
+                A4gMEGAAgQYgGAZAGCA&sclient=gws-wiz-serp">click here to visit link</a>
+            </div>
+                <div class="add">
+                <h6>Dangat park, Near Warje bridge,Warje-malwadi,pune</h6>
+            </div>
+        
+    </div>
+</body>
+</html>

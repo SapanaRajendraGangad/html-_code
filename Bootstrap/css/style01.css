@@ -1,0 +1,46 @@
+*
+{
+    padding: 0;
+
+}
+.header
+{
+    height: 90px;
+    width: 100%;
+    background-color: purple;
+    text-align: center;
+    line-height: 80px;
+}
+.main-con
+{
+    height: 300px;
+    margin-top: 10px;
+}
+.cont1
+{
+    height: 150px;
+    width: 96%;
+    background-color: purple;
+    margin-left: 13px;
+    text-align: center;
+    line-height: 180px;
+}
+.box1
+{
+    height: 200px;
+    width: 48%;
+    margin-left: 13px;
+    background-color: purple;
+    text-align: center;
+    line-height: 180px;
+}
+.box2
+{
+    height: 200px;
+    width: 48%;
+    margin-left: 20px;
+    color: white;
+    background-color: purple;
+    text-align: center;
+    line-height: 180;
+}

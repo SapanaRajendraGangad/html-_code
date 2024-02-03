@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .menu
+        {
+            height: 50px;
+            width: 100%;
+        }
+        .menu .img img
+        {
+          height: 30px;
+          width: 50px;
+          margin-top: 10px;
+          margin-left: 10px;
+          margin-bottom: 10px;
+        }
+        .menu ul{
+          float: right;
+          text-decoration: none;
+          padding-top: 20px;
+        }
+        .menu ul li{
+          display: inline;
+          margin: 10px; 
+        }
+        .menu ul li a{
+          text-decoration: none;
+        }
+        .menu ul li a :hover{
+        background-color: palevioletred;
+        }
+        .menu ul li a select
+        {
+          border: none;
+        }
+        .dpm
+        {
+          font-size: 15px;
+          width: 100px;
+        }
+        input[type=button]
+        {
+        background-color: pink;
+        border-radius: 4px;
+        font-size: 20px;
+        margin-right: 10px;
+        }
+        .content
+        {
+          background-image: url(cafe.jpg);
+          min-height:600px;
+          background-position: center;
+         background-repeat: no-repeat;
+         position: relative;
+         background-size: cover;
+        }
+        .content h6{
+          font-size: 17px;
+          color: white;
+          padding-top: 80px;
+          margin-left: 400px;
+          color: white;
+        }
+        .content h1
+        {
+          color: white;
+          font-size: 43px;
+          margin-left: 330px;
+        }
+        .content h2
+        {
+          color: white;
+          font-size: 20px;
+          margin-left: 350px;
+          padding-top: 20px;
+        }
+        .content h3{
+          color: white;
+          font-size: 20px;
+          margin-left: 330px;
+        }
+        .content h4
+        {
+          color: white;
+          font-size: 20px;
+          margin-left: 380px;
+        }
+        .content input[type=button]
+        {
+          margin-left: 650px;
+          margin-top: 50px;
+          height: 30px;
+          width: 100px;
+          border-radius: 10px;
+          border: none;
+        }
+        .box
+        {
+          height: 200px;
+          width: 60%;
+          background-color: white;
+          margin-left: 300px;
+          margin-top: 50px;
+        }
+        .b1
+        {
+          height:200px;
+          width: 269px;
+          color: black;
+          float: left;
+        }
+        .b2
+        {
+          height:200px;
+          width: 269px;
+          color: black;
+          float: left;
+          background-color: rgb(223, 222, 222); 
+        }
+         .b3
+        {
+          height:200px;
+          width: 269px;
+          float: right;
+          color: black;
+        }
+        .box .b1 h5{
+          margin-top: ;
+          font-size: 30px;
+          padding-left: 20px;
+        }
+        .box .b1 img
+        {
+          margin-top: 40px;
+          margin-left: 80px;
+        }
+        .box p
+        {
+          margin-left: 10px;
+        }
+        .box .b2 h5{
+          font-size: 30px;
+          padding-left: 40px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+        .box .b2 img
+        {
+          margin-top: 40px;
+          margin-left: 80px;
+        }
+        .box .b3 h5{
+          margin-top: 5px;
+          font-size: 30px;
+          padding-left: 20px;
+        }
+        .box .b3 img
+        {
+          margin-top: 40px;
+          margin-left: 80px;
+        }
+       .home
+       {
+        width: 100%;
+        height: 300px;
+       }
+        .atmosp
+       {
+        margin-top: 100px;
+        float: right;
+        margin-right: 150px;
+       }
+       .imgs
+       {
+        margin-top: 50px;
+        height: 300px;
+        width: 500px;
+       float: left;
+       margin-left: 80px;
+       }
+       .hq h1{
+        margin-left: 400px;
+        margin-top: 50px;
+       }
+       .atmosp h1{
+        color: brown;
+        margin-bottom: 10px;
+        font-size: 30px;
+       }
+      .atmosp input[type=button]
+      {
+        margin-top: 20px;
+        margin-top: 20px;
+        border-radius: 20px;
+        padding: 7px;
+        border: none;
+      }
+      .services
+      {
+        width: 100%;
+        height: 300px;
+        margin-top: 50px;
+      }
+      .eximg
+      {
+        height: 300px;
+        width: 500px;
+       float: right;
+      margin-right: 100px;
+       }
+       .excellent
+       {
+        float: left;
+        width: 400px;
+        margin-top: 150px;
+        margin-left: 150px;
+       }
+       .excellent h1
+       {
+        color: brown;
+        margin-bottom: 10px;
+        font-size: 30px;
+       }
+       .excellent input[type=button]
+       {
+        margin-top: 20px;
+        border-radius: 20px;
+        padding: 7px;
+        border: none;
+       }
+       .blur
+       {
+        background-image:url(blur.png);
+        height: 400px;
+        width: 100%;
+        margin-top: 30px;
+        background-repeat: no-repeat;
+        background-position:center ;
+        position: relative;
+         background-size: cover;
+       }
+       .fan
+       {
+        height: 400px;
+        width: 55%;
+        float: left;
+       }
+       .team 
+       {
+        width: 250px;
+        margin-left: 100px;
+        float: left;
+       }
+       .team h1
+       {
+        margin-bottom: 20px;
+        margin-top: 20px;
+       }
+       .coffee
+       {
+        float: right;
+        width: 250px;
+        margin-left: 100px;
+       }
+       .coffee h1{
+        margin-bottom: 20px;
+        margin-top: 20px;
+       }
+       .visit
+       {
+        height: 400px;
+        width: 40%;
+        float: left;
+       }
+       .visit input[type=button]
+       {
+       border-radius: 5px;
+         background-color: purple;
+         margin-top: 70px;
+         margin-left: 60px;
+       }
+       .footer
+       {
+        height: 300px;
+        width: 50%;
+        margin-left: 350px;
+        margin-top: 30px;
+       }
+       .footer h1 
+       {
+         text-align: center;
+       }
+       .footer p{
+        text-align: center;
+       }
+       .photo{
+        width: 100%;
+        height: 300px;
+        background-color: pink;
+       }
+       .ph1
+       {
+        height: 300px;
+        width: 220px;
+        background-color: antiquewhite;
+        float: left;
+       }
+       .ph2
+       {
+        height: 300px;
+        width: 230px;
+        background-color: aqua;
+        float: left;
+       }
+       .ph3
+       {
+        height: 300px;
+        width: 225x;
+        background-color: blue;
+        float: right;
+       }
+      .ph1 img
+      {
+        height: 300px;
+        width: 220px;
+      }
+      .ph2 img{
+      height: 300px;
+      width: 231px;
+      }
+      .ph3 img{
+      height: 300px;
+      width: 224px;
+      }
+       </style> 
+</head>
+<body>
+  <div class="menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+        <li><a href="#">Watch Now</a></li>
+        <li><a href="#">
+          <select  class="dpm"  name="MENU" id="MENU">
+            <option value="MENU">Blocks</option>
+            <option value="PASSTA">PASSTA</option>
+            <option value="PIZZA">PIZZA</option>
+            <option value="BURGER">BURGER</option>
+            <option value="NODDELS">NODDELS</option>
+            <option value="FRENCHFRIESES">FRENCH FRISES</option>
+            <option value="COFFEE">COFFEE</option>
+          </select></a></li>
+        <li><a href="#"><select  class="dpm"  name="MENU" id="MENU">
+          <option value="MENU">Demo page</option>
+          <option value="PASSTA">PASSTA</option>
+          <option value="PIZZA">PIZZA</option>
+          <option value="BURGER">BURGER</option>
+          <option value="NODDELS">NODDELS</option>
+          <option value="FRENCHFRIESES">FRENCH FRISES</option>
+          <option value="COFFEE">COFFEE</option>
+        </select></a></li> 
+        <input type="button" value="BUY NOW">
+    </ul>
+  <div class="img">
+    <img src="cafe.jpg">
+  </div>
+</div>
+  <div class="content">
+    <h6>WANT TO HAVE A GOOD DRINK AND TO DRINK SOME COFFEE?</h6>
+    <h1>eCommerce HTML Theme for Cafe</h1>
+    <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores</h2>    
+       <h3>quibusdam a, laudantium quisquam, molestiae cumque est qui quia quos hic.</h3>
+         <h4>Quo quae non molestias sit quos it is sapana's cafe!</h4>
+         <input type="button" value="read more">
+        <div class="box">
+          <div class="b1">
+            <img src="coffee1.png">
+  <h5>Best coffee</h5>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, sapiente?</p>
+          </div>
+          <div class="b2">
+            <img src="clock.png">
+            <h5>fast cooking</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, ad!</p>
+          </div>
+          <div class="b3">
+            <img src="delivery.png">
+            <h5>Free delivery</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste provident 
+              architecto cumque quae, quisquam perspiciatis!</p>
+          </div>
+        </div>
+</div>
+<div class="hq">
+<h1>You will enjoy our cafe if you love....</h1></div>
+<div class="home">
+  <div class="atmosp">
+  <h1>Homely atmosphere</h1>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, sit?<br>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, officia.
+  </p>
+  <input type="button" value="view more">
+  </div>
+  <img src="cafe01.png"class="imgs" alt="">
+  </div>
+  <div class="services">
+  <div class="excellent">
+    <h1>excellent Services</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut fugit tempora
+       aliquid rerum distinctio. Veritatis vel nam maxime quae ipsa?
+    </p>
+    <input type="button" value="More Info">
+  </div>
+  <img src="online.png" class="eximg" alt="">
+  </div>
+  <div class="blur">
+    <div class="fan">
+    <div class="team">
+      <h1>OUR TEAM</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, eos!<br><span style="color: red;">learn more</span></p>
+      </div>
+      <div class="coffee"> 
+      <h1> OUR COFFEE</h1>
+       <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, eos!<br><span style="color: red;">learn more</span></P>
+    </div>
+    <div class="team">
+      <h1>OUR PHILOSOPHY</h1>
+      <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, eos!<br><span style="color: red;">learn more</span></P>
+    </div>
+    <div class="coffee">
+      <h1>OUR SPEED</h1>
+      <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, eos!<br><span style="color: red;">learn more</span></P>
+    </div>
+    </div>
+    <div class="visit">
+      <p>HTML5 eCommerce Template</p>
+      <h1>4 Reasons to visit us</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo cum reprehenderit doloribus neque obcaecati eligendi eum. Saepe maiores dolor tempora soluta nostrum, deserunt molestias
+        . Officiis assumenda necessitatibus laborum non fugiat.</p>
+        <input type="button" value="visit us">
+    </div>
+  </div>
+  <div class="footer">
+ <h1>Meet Our Waiters team</h1>
+ <p>
+  Lorem ipsum dolor sit amet.
+ </p>
+ <div class="photo">
+  <div class="ph1">
+    <img src="girl.jpg">
+  </div>
+  <div class="ph2">
+  <img src="mute.jpg">
+  </div>
+  <div class="ph3">
+<img src="cap.jpg">
+  </div>
+ </div>
+  </div>
+</body>
+</html>

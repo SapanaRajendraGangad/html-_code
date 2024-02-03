@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .table
+        {
+            display: table;
+            border: 1px solid black;
+        }
+        .col
+        {
+            display: table-cell;
+            border: 1px solid black;
+            width: 100px;
+            padding: 5px;
+            text-align: center;
+        }
+        .row
+        {
+            display: table-row;
+        }
+        .heading
+        {
+            display: table-header-group;
+            background-color: lightseagreen;
+            color: white;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .caption
+        {
+            display: table-caption;
+        }
+        .caption h2{
+            text-align: center;
+            text-shadow: 5px 10px 5x gray;
+            font-size: 32px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+  <div class="table">
+    <div class="caption">
+        <h1>Personal Information</h1>
+    </div>
+    <div class="heading">
+        <div class="col">Name</div>
+        <div class="col">Mobile</div>
+        <div class="col">Address</div>
+    </div>
+    <div class="row">
+        <div class="col">Sanvi</div>
+        <div class="col">8668362216</div>
+        <div class="col">Pune</div>
+    </div>
+    <div class="row">
+        <div class="col">Yukta</div>
+        <div class="col">9356576151</div>
+        <div class="col">Kolhare</div>
+    </div>
+    <div class="row">
+        <div class="col">Anvi</div>
+        <div class="col">8080854590</div>
+        <div class="col">Baptara</div>
+    </div>
+  </div>  
+</body>
+</html>

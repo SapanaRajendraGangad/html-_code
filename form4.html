@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        body
+        {
+             display: flex;
+            flex-direction:column; 
+            height: 950px;
+            background-image:url(sunrise.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .wrapper-div
+        {
+            min-height: 90%;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+        }
+        .logo-menu-div
+        {
+            display: flex;
+            flex-direction: row;
+            min-height: 60px;
+            width: 100%;
+            gap: 20px;
+        }
+        .logo
+        {
+            min-height: 60px;
+            width: 45%;
+            display: flex; 
+            flex-direction: row;    
+            background-color: chartreuse;
+            align-items: center;
+            justify-content: center;
+        }
+        .menu
+        {
+            min-height: 60px;
+            width: 53%;
+            display: flex;
+            flex-direction:row;
+            background-color: yellow;
+            align-items: center;
+            justify-content: center;
+        }
+        .slider
+        {
+            min-height: 180px;
+            width: 100%;
+            margin-top: 10px;
+            gap: 10px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            background-color: aqua;
+        }
+        .box
+        {
+            height: 300px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            margin-top: 10px;
+            gap: 10px;
+        }
+        .box1
+        {
+            height: 300px;
+            width: 33%;
+            display: flex;
+            flex-direction:row;
+            background-color: red;
+            align-items: center;
+            justify-content: center;
+        }
+        .box2
+        {
+            height: 300px;
+            width: 33%;
+            display: flex;
+            flex-direction: row;
+            background-color: red;
+            align-items: center;
+            justify-content: center;
+        }
+        .box3
+        {
+            height: 300px;
+            width: 33%;
+            display: flex;
+            flex-direction: row;
+            background-color: red;
+            align-items: center;
+            justify-content: center;
+        }
+         .content
+         {
+            min-height: 30%;
+            width: 100%;
+            background-color: chartreuse;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+         }
+         .footer
+         {
+            height: 500px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            background-color: aqua;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+         }
+         @media only screen and (max-width:500px) {
+            .logo-menu-div
+            {
+                flex-direction: column;
+                height: 400px;
+            }
+            .logo-menu-div .logo
+            {
+                min-height: 4em;
+                min-width: 100%;
+            }
+            .logo-menu-div .menu
+            {
+                width: 100%;
+            }
+            .slider
+           {
+            flex-direction: column;
+            margin-top: 100px;
+           }
+            .box
+            {
+                flex-direction: column;
+            }
+            .box .box1 
+            {
+                width: 100%;
+            }
+            .box .box2
+            {
+                width: 100%;
+            }
+            .box .box3
+            {
+                width: 100%;
+            }
+            .content
+            {
+                min-height: 200px;
+            }
+            .footer
+            {
+                min-height: 40px;
+            }
+         }
+    </style>
+</head>
+<body>
+    <div class="wrapper-div">
+        <div class="logo-menu-div">
+            <div class="logo">
+                <h4>WEBSITE NAME</h4>
+            </div>
+            <div class="menu">
+                MENU
+            </div>
+        </div>
+        <div class="slider">
+            Slider
+        </div>
+        <div class="box">
+            <div class="box1">BOX1</div>
+            <div class="box2">BOX2</div>
+            <div class="box3">BOX3</div>
+        </div>
+        <div class="content">
+           CONTENT 
+        </div>
+        <div class="footer">
+            Footer
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body
+        {
+            height: 100vh;
+        }
+        main{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .side-a
+        {
+            width: 100%;
+            height: 100vh;
+            background-image: url(bro-sis.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+        .side-b
+        {
+            width: 100%;
+            height: 100vh;
+            background-image: url(bro-sis.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            filter: grayscale(100%);
+        }
+        .gutter
+        {
+            height: 100vh;
+            cursor: w-resize;
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="side-a a"></div>
+        <div class="side-b b"></div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/split.js/1.6.0/split.min.js"></script>
+    <script>
+    Split(['.a', '.b'], {
+        sizes: [50, 50],
+        minSize: 200,
+    });
+    </script>
+</body>
+</html>

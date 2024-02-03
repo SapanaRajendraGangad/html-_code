@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box
+        {
+            height: 500px;
+            width: 50%;
+            background-color: aqua;
+            animation-name: ani;
+            animation-duration: 4s;
+            animation-timing-function: 0.7;
+            color: white;
+            animation-iteration-count: infinite;
+            transition: 0px;
+            float: right;
+        }
+        .box1
+        {
+            height: 500px;
+            width: 50%;
+            background-color: aqua;
+            animation-name: ani;
+            animation-duration: 4s;
+            animation-timing-function: 0.7;
+            color: white;
+            float: left;
+            animation-iteration-count: infinite;
+            transition: 0px;
+            animation-delay: 2s;
+        }
+        .box h1
+        {
+            margin: 300px;
+        }
+        .box:hover
+        {
+            transform: rotateY(360deg);
+        }
+        @keyframes ani {
+           0%
+           {
+            transform: rotate(360deg);
+            background-image:url(cat1.jpg);
+            background-repeat: no-repeat;
+        background-position:center ;
+        position: relative;
+         background-size: cover;
+            border-radius: 10%;
+           } 
+           25%
+           {
+            transform: rotate(360deg);
+            background-image:url(cat2.jpg);
+            background-repeat: no-repeat;
+        background-position:center ;
+        position: relative;
+         background-size: cover;
+            border-radius: 50%;
+            border-radius: 20%;
+           }
+           50%
+           {
+            transform: rotate(360deg);
+            background-image:url(cat3.jpg);
+            background-repeat: no-repeat;
+        background-position:center ;
+        position: relative;
+         background-size: cover;
+            border-radius: 50%;
+            border-radius: 60%;
+           }
+           75%
+           {
+            transform: rotate(360deg);
+            background-image:url(cat5.jpg);
+            background-repeat: no-repeat;
+        background-position:center ;
+        position: relative;
+         background-size: cover;
+            border-radius: 50%;
+            border-radius: 100%;
+           }
+           100%
+           {
+            transform: rotate(360deg);
+            background-image:url(cat6.jpg);
+            background-repeat: no-repeat;
+        background-position:center ;
+        position: relative;
+         background-size: cover;
+            border-radius: 30%;
+           }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        
+    </div>
+    <div class="box1"></div>
+</body>
+</html>
